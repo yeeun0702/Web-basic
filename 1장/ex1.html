@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>웹 페이지의 구성요소</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: aliceblue; color:black;
+            margin-left: 40px; margin-right: 40px;
+        }
+
+        h3{
+            text-align: center; color:cornflowerblue;
+        }
+
+        hr{
+            height:5px; border: solid grey; background-color:grey;
+        }
+
+        span {color: blue; font-size:20px;
+        }
+    </style>
+
+    <script>
+        function show() {
+            document.getElementByld("fig").src="ElvisPresley.png";
+        }
+
+        function hide() {
+            document.getElementByld("fig").src="";
+        }
+    </script>
+</head>
+<body>
+  <h3 omouseover="show()" omouseout="hide()">Elvis Preely</h3>
+  <hr>
+  <div><img id="fig" src=""></div>
+  He was an Americann singer and actor. <span>Love Me Tender</span>
+</body>
+</html>
