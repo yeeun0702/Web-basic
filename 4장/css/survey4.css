@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    color: brown;
+}
+header{
+    border-bottom : 1px solid black;
+}
+body{
+    background-color: aliceblue;
+}
+section{
+    background-color: pink;
+}
+p{
+    color:blueviolet;
+    font-family: 휴먼편지체, 바탕, Serif;
+}
+footer{
+    background-color: orange;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: 1em;
+}

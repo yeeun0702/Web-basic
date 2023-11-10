@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+        <head>
+         <meta charset="UTF-8">
+        <title></title>
+        <style>
+        
+            h3 {color : black;}
+            li:hover{background: lightcoral;}
+            body.main{ background-color:aliceblue; color: teal;}
+            /*body 안의 main 태그에만 style 속성이 적용*/
+            div.warning:active{color: red;}
+            li#list{background-color: antiquewhite;}
+            div > strong {background: lightpink;}
+            ul strong{color:darkslateblue}
+            /*ul이 조상태그 strong이 자손태그*/
+            li[id=l3]{color:darkgoldenrod;}
+        </style>
+        </head>
+    <body class="main">
+
+        <h3>Web programming</h3>
+        <hr>
+        <div>
+            <div>2022 2학기 <strong>학습내용</strong></div>
+            <ul>
+                <li id="l1">HTML5</li>
+                <li id="l2"><strong>CSS</strong></li>
+                <li id="l3">Javascript</li>
+            </ul>
+            <div class ="warning" id ="list">60점 이하는 F</div>
+        </div>
+    </body>
+</html>
