@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+        <head>
+         <meta charset="UTF-8">
+        <title>콤보박스 만들기</title>
+        </head>
+    <body>
+        <h3>먹고 싶은 음식은 ?</h3>
+        <hr>
+        <form>
+            <select name="china">
+                <option value="1">짜장면</option>
+                <option value="2" selected>짜장면</option>
+                <!--이미 선택된 상태로 나타내기 위해서는
+                    checked 아니고  selected 속성을 이용함-->
+                <option value="3">탕수육</option>
+            </select>
+        </form>
+
+        <!--select를 이용해서 콤보박스를 만들 때
+        여러개의 그룹을 이용해서 작성하기도 가능-->
+        <h3>오늘 점심</h3>
+            <select name="food">
+                <optgroup label="양식">
+                    <option value="1">오일파스타</option>
+                    <option value="2" selected>스테이크</option>
+                    <option value="3">샐러드</option>
+                </optgroup>
+
+                <optgroup label="한식">
+                    <option value="1">비빔밥</option>
+                    <option value="2" selected>불고기</option>
+                    <option value="3">된장찌개</option>
+                </optgroup>
+            <!--결과 출력 시 여러개의 카테고리로 나누어져서 표현 가능-->
+          
+            </select>
+
+
+
+        <form>
+
+        </form>
+    </body>
+</html>
+
