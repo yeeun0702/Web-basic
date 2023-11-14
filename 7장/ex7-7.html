@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+        <head>
+         <meta charset="UTF-8">
+        <title>String 객체의 메소드 활용</title>
+        <style></style>
+        </head>
+    <body>
+        <h3>String 객체의 메소드 활용</h3>
+        <hr>
+        <script>
+            let a = new String("Boys and Girls");
+            let b = "!!";
+
+            document.write("a :" + a +"<br>");
+            document.write("b :" + b +"<br><hr>");
+            document.write(a.charAt(0) + "<br>"); // a의 0번째 자리 리턴 --> B
+            document.write(a.concat(b, "입니다") + "<br>"); // 문자열 연결
+            document.write(a.indexOf("s")+ "<br>"); // s의 자리는 index 3
+            document.write(a.indexOf("And")+ "<br>"); // 발견할 수 없으므로 -1 리턴
+            document.write(a.slice(5, 8) + "<br>"); // 슬라이싱
+            document.write(a.substr(5, 3) + "<br>"); // 5번째 자리부터 3개 문자열 리턴 즉, 앞이 위치 뒤가 개수
+            document.write(a.toUpperCase() + "<br>"); // 대문자 변환
+            document.write(a.replace("and", "or")+"<br>"); // 변경
+            document.write("    kitae".trim() + "<br><br>"); // 공백문자 자동으로 삭제
+            let sub = a.split("");
+            document.write("a를 빈칸으로 분리<br>");
+            for (let i=0; i<sub.length; i++)
+                document.write("sub" + i + "=" + sub[i] + "<br>");
+
+            document.write("<hr>String 메소드를 실행 후 a와 b 변함없음<br>");
+            document.write("a: " + a + "<br>");
+            document.write("b: " + b + "<br>");
+
+        </script>
+    </body>
+</html>
