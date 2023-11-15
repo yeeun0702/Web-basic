@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+        <head>
+         <meta charset="UTF-8">
+        <title></title>
+        <style></style>
+        </head>
+    <body>
+        <h3>문자열 분할</h3>
+        <hr>
+        <script>
+            let s = new String(prompt("문자열 입력")) 
+            // prompt함수를 이용하여 입력받은 문자열을 string에 담음
+            s = s.split("&") // &를 기준으로 분할한 문자열을 얻어냄
+            for(i=0; i < s.length; i++){
+                document.write(s[i] + "<br>")
+            }
+            
+        </script>
+    </body>
+</html>

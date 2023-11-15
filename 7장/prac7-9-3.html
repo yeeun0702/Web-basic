@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+        <head>
+         <meta charset="UTF-8">
+        <title>프로토타입 함수로 객체 생성하기</title>
+        <style></style>
+        </head>
+    <body>
+        <script>
+            function Book(title, author,price){
+                this.title = "HTML5";
+                this.author = "황기태";
+                this.price = 20000;
+            }
+
+            let book = new Book("HTML5", "황기태", 20000)
+            document.write("book : ");
+            document.write(book.title + ", ");
+            document.write(book.author + ", ");
+            document.write(book.price + "<br>");
+        </script>
+    </body>
+</html>
