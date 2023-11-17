@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+        <head>
+         <meta charset="UTF-8">
+        <title></title>
+        <style>
+            td {width: 50px; height: 50px; border: 1px solid orchid;}
+        </style>
+        <script>
+            let tds;
+            let prevIndex=0, index=0;
+            window.onload = function(e){
+                switch(e.key) {
+                    case "ArrowDown":
+                        if (index/3 >= 2) return; // 맨 위 셀의 경우
+                        index += 3;
+                        break;
+                    case "ArrowUp":
+                        if (index/3 < 1) return; // 맨 아래의 셀의 경우
+                        index -= 3;
+                        break;
+
+                    case "ArrowLeft":
+                        if (index%3 == 0 ) return;
+                        index--;
+                        break;
+
+                    case "ArrowRight":
+                        if (index%3 == 2 )return;
+                        index++;
+                        break;
+                }
+                tds[index].style.backgroundColor = "orchid";
+                tds[prevIndex].style.backgroundColor = "white";
+                prevIndex = index;
+            }
+        </script>
+        </head>
+    <body>
+        <h3>화살표 키로 셀 위 이동하기</h3>
+        <table>
+            <tr><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td></tr>
+        </table>
+    </body>
+</html>
