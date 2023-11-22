@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'GowunDodum-Regular';
+}
+
+h1{ 
+    color : white;
+    text-align: center;
+    font-size: large;
+    padding-bottom: 30px;
+ }
+ 
+header{
+    padding: 20px;
+    align-items: center;
+    background-color: skyblue;
+    text-align: center;
+}
+
+
+nav{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ul{
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+    display: flex;
+}
+
+li a {
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 18px 40px;
+    text-decoration: none;
+    margin: 4px 4px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+
+.me{
+    list-style: none;
+    color: black;
+    text-align: center;
+}
+
+.me li{
+    padding-top: 30px;
+}
+.picture{
+    width : 500px;
+    height: 500px;
+}
+
+footer{
+    padding: 10px;
+    color: white;
+    background-color: skyblue;
+    text-align: center;
+}
+
+.btn{
+    padding-top: 10px;
+    position: relative;
+    border: none;
+    display: inline-block;
+    background-color: skyblue;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}

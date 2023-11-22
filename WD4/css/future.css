@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'GowunDodum-Regular';
+}
+
+h1{ 
+    color : white;
+    text-align: center;
+    font-size: large;
+    padding-bottom: 30px;
+ }
+ 
+header{
+    padding: 20px;
+    align-items: center;
+    background-color: dodgerblue;
+    text-align: center;
+}
+
+
+nav{
+   
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ul{
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+    display: flex;
+}
+
+li a {
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 18px 40px;
+    text-decoration: none;
+    margin: 4px 4px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+li a:hover{
+    font-size: 17px;
+    color: dodgerblue;
+    background-color: white;
+}
+
+
+table{
+    padding-top: 100px;
+    margin: auto;
+    display: inline-block;
+    border-width: 3px;
+    border-collapse:collapse;
+    align-items: center;
+    text-align: center;
+}
+
+
+body {
+    align-self: center;
+    text-align: center;
+}
+
+
+.w-btn {
+    padding-top: 10px;
+    position: relative;
+    border: none;
+    display: inline-block;
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.w-btn:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+.w-btn-outline {
+    position: relative;
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+
+.radio {
+    padding: 15px 10px;
+    align-items: center;
+    
+}
+
+.radio input[type=radio]{
+    display: none;
+    margin:10px;
+}
+
+.radio input[type=radio]+label{
+    display: inline-block;
+    cursor: pointer;
+    height: 24px;
+    width: 90px;
+    border: 1px solid dodgerblue;
+    line-height: 24px;
+    text-align: center;
+    font-weight:bold;
+    font-size:13px;
+}
+
+.radio input[type=radio]+label{
+    background-color: white;
+    color: dodgerblue;
+}
+.radio input[type=radio]:checked+label{
+    background-color: dodgerblue;
+    color: white;
+}
+
+footer{
+    margin-top: 110px;
+    padding: 10px;
+    color: white;
+    background-color: dodgerblue;
+    text-align: center;
+}
+
+p{
+    color:dodgerblue;
+}

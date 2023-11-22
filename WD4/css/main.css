@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'GowunDodum-Regular';
+}
+
+h1{ 
+    color : white;
+    text-align: center;
+    font-size: large;
+    padding-bottom: 30px;
+ }
+ 
+header{
+    padding: 20px;
+    align-items: center;
+    background-color: black;
+    text-align: center;
+}
+
+
+nav{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ul{
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+    display: flex;
+}
+
+li a {
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 18px 40px;
+    text-decoration: none;
+    margin: 4px 4px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+li a:hover{
+    font-size: 17px;
+    color: black;
+    background-color: white;
+}
+
+
+
+.article{
+    align-items: center;
+    width: 10px;
+}
+
+
+/* 보여줄 구간의 높이와 넓이 설정 */
+#slideShow {
+    padding-top: 20px;
+    width: 100%;
+    height: 650px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+   
+}
+
+.slides {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 1000px;
+    height: 1000px;
+}
+
+
+.box_size {
+    width: 450px;
+    height: 600px;
+}
+
+/* 슬라이드들 옆으로 정렬 */
+.slides li:not(:last-child) {
+    float: left;
+}
+
+.slides li {
+    float: left;
+}
+
+.controller span {
+    position: absolute;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 20px;
+    top: 40%;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 이전, 다음 화살표에 마우스 커서가 올라가 있을때 */
+.controller span:hover {
+    background-color: black;
+}
+
+.prev {
+    left: 10px;
+}
+
+/* 이전 화살표에 마우스 커서가 올라가 있을때 
+  이전 화살표가 살짝 왼쪽으로 이동하는 효과*/
+.prev:hover {
+    transform: translateX(-10px);
+}
+
+.next {
+    right: 10px;
+}
+
+/* 다음 화살표에 마우스 커서가 올라가 있을때 
+  이전 화살표가 살짝 오른쪽으로 이동하는 효과*/
+.next:hover {
+    transform: translateX(10px);
+}
+
+footer{
+    padding: 10px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
